@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja2 Example Document</title>
+</head>
+<body>
+    <!-- string operations -->
+    <h1>{{"Welcome " +first_name}}</h1>
+    <h3>Name : {{first_name}} {{last_name}}</h3> 
+    <h3>Courses : {{courses}}</h3>
+
+    <!-- jinja filters (| -> pip operator)-->
+    <h3>First Name: {{first_name | upper}}</h3>
+    <h3>Last Name: {{last_name | lower}}</h3>
+    <h3>Full Name: {{first_name | capitalize}} {{last_name | capitalize}}</h3>
+    <h3>Total Courses: {{courses | length}}</h3>
+
+    <!-- jinja2 expression -->
+    <p>{{10+20}}</p> 
+    <h3>Price : {{price}}</h3>
+    <h3>Price after 90 rupee GST : {{price + 90}}</h3>
+
+    <!-- jinja comments -->
+    {# <p>{{"Welcome " +first_name}}</p> #}
+    <!-- Normal html command can be seen when inspect on browser source code but jinja command ({# #}) wont be seen there -->
+</body>
+</html>
