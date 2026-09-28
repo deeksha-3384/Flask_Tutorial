@@ -1,0 +1,20 @@
+<!-- template inheritance -->
+{% extends "base.html" %}
+{% block content %}
+<h1 style="text-align: center;">Welcome to About page</h1>
+<form action="/about" method="POST">
+    <div>
+        <label>Name:</label>
+        <input type="text" name="username" placeholder="Enter your username">
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email">
+    </div>
+    <div>
+        <label>Message:</label>
+        <textarea name="message" placeholder="Enter your message"></textarea>
+    </div>
+    <button type="submit">Send Message</button>
+</form>
+{% endblock %}

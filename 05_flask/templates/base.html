@@ -1,0 +1,35 @@
+<!-- Master or parent template, other template inherit this -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    {# <link rel="stylesheet" href="/static/css/style.css"> #}
+     <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Flask Codes</h1>
+        <!-- <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/dashboard">Dashboard</a>
+        </nav> -->
+        {% include "components/navbar.html" %}
+        <hr>
+        {% block content %}
+
+        {% endblock %}
+        <hr>
+    </header>
+    <!-- <footer>
+        <p>Copyright 2026</p>
+    </footer> -->
+    {% include "components/footer.html" %}
+    <script src="{{url_for('static',filename='js/script.js')}}"></script>
+</body>
+</html>
+
+{#-- 1. {% extends %} → inherit a whole layout (Use extends when multiple pages share the same overall structure).
+2. {% include %} → insert a small reusable piece #}

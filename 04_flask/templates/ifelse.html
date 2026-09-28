@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else Example</title>
+</head>
+<body>
+    <!-- if statment -->
+    {% if is_true %}
+    <h1>Welcome</h1>
+    {% endif %}
+
+    <!-- if-else statment -->
+    {% if old_user %}
+    <h1>Welcome back!!</h1>
+    {% else %}
+    <h1>Welcome new user!!</h1>
+    {% endif %}
+
+    <!-- elif statement -->
+    {% if marks >=90 and marks<=100 %}
+    <h1>Grade : A & Marks : {{marks}}</h1>
+    {% elif marks>=70 and marks<=89 %}
+    <h1>Grade : B & Marks : {{marks}}</h1>
+    {% elif marks>=40 and marks<=69 %}
+    <h1>Grade : C & Marks : {{marks}}</h1>
+    {% else %}
+    <h1>Grade : F & Marks : {{marks}}</h1>
+    {% endif %}
+    </body>
+</body>
+</html>

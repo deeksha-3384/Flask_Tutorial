@@ -1,0 +1,7 @@
+<!-- template inheritance -->
+{% extends "base.html"%}
+{% block content %}
+<h1 style="text-align: center;">Welcome to home page</h1>
+<button onclick="showMsg()">Click Me</button>
+<img src="{{url_for('static',filename='images/logo.jpg')}}" alt="Logo Image" style="border-radius: 5px; align-items: center;">
+{% endblock %}

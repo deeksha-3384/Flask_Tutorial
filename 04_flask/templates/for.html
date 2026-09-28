@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Example</title>
+</head>
+<body>
+    <h1>Array: </h1>
+    {% for course in courses %}
+    <ul>
+    <h1><li>{{loop.index}}. {{course}}</li></h1> 
+    <!-- loop.index -> gives index starting from 1 and loop.index0 -> gives index starting from 0 -->
+    </ul>
+    {% endfor %}
+
+    <h1>Objects: </h1>
+    {% for key, value in details.items() %}
+    <ul>
+        <h1><li>{{key}} : {{value}}</li></h1>
+    </ul>
+    {% endfor %}
+</body>
+</html>

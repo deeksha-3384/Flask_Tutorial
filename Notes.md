@@ -17,3 +17,11 @@
 
 ## jinja2
 - Jinja2 is a template engine for Python. In Flask, it lets you put Python data/logic into your HTML.
+
+## Difference betweem extends and include:
+1. {% extends %} → inherit a whole layout (Use extends when multiple pages share the same overall structure).
+2. {% include %} → insert a small reusable piece
+
+## Form tag
+1. action → WHERE? -> It specifies the URL/route that should receive the form data.
+2. method → HOW? -> It specifies how the data is sent.
